@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Tilahun Berga</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Me</a> |
+                <a href="skills.html">Skills &amp; Education</a> |
+                <a href="projects.html">Projects &amp; Achievements</a> |
+                <a href="media.html">Media &amp; Interests</a> |
+                <a href="contact.html">Contact Me</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Direct Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:tilahunberga63@gmail.com">tilahunberga63@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:0972604544">0972604544</a></p>
+            <p><strong>Institution:</strong> Addis Ababa Science and Technology University</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Send Me a Message</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="fullname">Full Name *:</label><br>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Visitor Full Name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address *:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="visitor@example.com">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="0912345678">
+                    </p>
+
+                    <p>
+                        <label for="dob">Date:</label><br>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <p>
+                        <label for="subject">Reason for Contact:</label><br>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Select Option --</option>
+                            <option value="project">Gebeya Price Tracker / Sema Inquiry</option>
+                            <option value="collaboration">Software Engineering Collaboration</option>
+                            <option value="general">General Message</option>
+                        </select>
+                    </p>
+
+                    <p>Preferred Contact Method:<br>
+                        <input type="radio" id="pref_email" name="contact_pref" value="email" checked>
+                        <label for="pref_email">Email</label>
+                        
+                        <input type="radio" id="pref_phone" name="contact_pref" value="phone">
+                        <label for="pref_phone">Phone</label>
+                    </p>
+
+                    <p>Topics of Interest:<br>
+                        <input type="checkbox" id="topic1" name="interests" value="html_css_js">
+                        <label for="topic1">HTML / CSS / JavaScript</label>
+                        
+                        <input type="checkbox" id="topic2" name="interests" value="web_apps">
+                        <label for="topic2">Web Application Projects</label>
+                    </p>
+
+                    <p>
+                        <label for="message">Your Message *:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40" required placeholder="Type your message here..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <input type="submit" value="Submit Message">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Tilahun Berga. All rights reserved.</p>
+    </footer>
+</body>
+</html>
