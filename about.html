@@ -8,8 +8,6 @@
     <title>About Me - Tilahun Berga</title>
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <link rel="stylesheet" href="about.css">
-    <script>document.documentElement.classList.add("js");</script>
-    <script src="about.js" defer></script>
 </head>
 <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -145,24 +143,24 @@
         <section class="stats-section" aria-labelledby="stats-title">
             <div class="shell">
                 <h2 class="sr-only" id="stats-title">Personal statistics</h2>
-                <ul class="stats reveal">
+                <ul class="stats">
                     <li class="stat">
-                        <p class="stat-value"><span data-count="2">2</span></p>
+                        <p class="stat-value" style="--target: 2;"><span class="sr-only">2</span></p>
                         <p class="stat-label">Projects built</p>
                         <p class="stat-note">Sema shipped · Gebeya in progress</p>
                     </li>
                     <li class="stat">
-                        <p class="stat-value"><span data-count="4">4</span></p>
+                        <p class="stat-value" style="--target: 4;"><span class="sr-only">4</span></p>
                         <p class="stat-label">Languages</p>
                         <p class="stat-note">HTML · CSS · JavaScript · Java</p>
                     </li>
                     <li class="stat">
-                        <p class="stat-value"><span data-count="4">4</span></p>
+                        <p class="stat-value" style="--target: 4;"><span class="sr-only">4</span></p>
                         <p class="stat-label">Certificates</p>
                         <p class="stat-note">Fundamentals, data, AI &amp; Android</p>
                     </li>
                     <li class="stat">
-                        <p class="stat-value"><span data-count="1.9" data-decimals="1" data-since="2025-01-01">1.9</span></p>
+                        <p class="stat-value stat-value--years"><span class="sr-only">1.9</span></p>
                         <p class="stat-label">Years of learning</p>
                         <p class="stat-note">Since January 2025</p>
                     </li>
@@ -184,7 +182,7 @@
                     </p>
                 </header>
 
-                <div class="background-grid stagger">
+                <div class="background-grid">
                     <article class="info-card reveal">
                         <span class="info-icon" aria-hidden="true">
                             <svg class="icon"><use href="#i-cap"></use></svg>
@@ -356,7 +354,7 @@
                     </p>
                 </header>
 
-                <div class="skill-grid stagger">
+                <div class="skill-grid">
                     <article class="skill-card reveal" style="--level: 90%;">
                         <div class="skill-top">
                             <span class="skill-icon skill-icon-html" aria-hidden="true">
@@ -474,8 +472,8 @@
                     </p>
                 </header>
 
-                <!-- Tip: to link a real PDF, add data-pdf="certificates/your-file.pdf" to a button below. -->
-                <div class="cert-grid stagger">
+                <!-- Each card opens a CSS-only certificate panel via :target. -->
+                <div class="cert-grid">
                     <article class="cert-card reveal">
                         <span class="cert-icon" aria-hidden="true">
                             <svg class="icon"><use href="#i-seal"></use></svg>
@@ -487,10 +485,10 @@
                             <li>Functions</li>
                             <li>OOP basics</li>
                         </ul>
-                        <button class="btn btn-outline cert-btn" type="button" data-cert="cert-programming" aria-haspopup="dialog" aria-controls="cert-dialog">
+                        <a class="btn btn-outline cert-btn" href="#cert-programming" aria-haspopup="dialog" aria-controls="cert-programming">
                             View certificate
                             <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="cert-card reveal">
@@ -504,10 +502,10 @@
                             <li>Statistics</li>
                             <li>Visualization</li>
                         </ul>
-                        <button class="btn btn-outline cert-btn" type="button" data-cert="cert-data" aria-haspopup="dialog" aria-controls="cert-dialog">
+                        <a class="btn btn-outline cert-btn" href="#cert-data" aria-haspopup="dialog" aria-controls="cert-data">
                             View certificate
                             <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="cert-card reveal">
@@ -521,10 +519,10 @@
                             <li>AI concepts</li>
                             <li>Ethics</li>
                         </ul>
-                        <button class="btn btn-outline cert-btn" type="button" data-cert="cert-ai" aria-haspopup="dialog" aria-controls="cert-dialog">
+                        <a class="btn btn-outline cert-btn" href="#cert-ai" aria-haspopup="dialog" aria-controls="cert-ai">
                             View certificate
                             <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="cert-card reveal">
@@ -538,10 +536,10 @@
                             <li>UI layouts</li>
                             <li>Navigation</li>
                         </ul>
-                        <button class="btn btn-outline cert-btn" type="button" data-cert="cert-android" aria-haspopup="dialog" aria-controls="cert-dialog">
+                        <a class="btn btn-outline cert-btn" href="#cert-android" aria-haspopup="dialog" aria-controls="cert-android">
                             View certificate
                             <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
-                        </button>
+                        </a>
                     </article>
                 </div>
             </div>
@@ -561,7 +559,7 @@
                     </p>
                 </header>
 
-                <div class="philosophy-grid stagger">
+                <div class="philosophy-grid">
                     <article class="principle reveal">
                         <span class="principle-num" aria-hidden="true">01</span>
                         <span class="principle-icon" aria-hidden="true">
@@ -628,7 +626,7 @@
                 </header>
 
                 <!-- Replace these four cards with your own hobbies and photos whenever you like. -->
-                <div class="hobby-grid stagger">
+                <div class="hobby-grid">
                     <article class="hobby-card reveal">
                         <div class="hobby-art art-read" aria-hidden="true">
                             <svg class="icon"><use href="#i-book"></use></svg>
@@ -776,91 +774,153 @@
         </div>
     </footer>
 
-    <!-- Certificate detail templates, opened in the dialog below -->
-    <template id="cert-programming">
-        <h2 class="cert-title">Programming Fundamentals</h2>
-        <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
-        <p class="cert-copy">
-            A foundational program covering how software is structured — from variables and
-            control flow to functions and object-oriented thinking.
-        </p>
-        <ul class="cert-topics">
-            <li>Variables &amp; control flow</li>
-            <li>Functions &amp; problem solving</li>
-            <li>Object-oriented basics</li>
-        </ul>
-    </template>
-
-    <template id="cert-data">
-        <h2 class="cert-title">Data Analysis Fundamentals</h2>
-        <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
-        <p class="cert-copy">
-            A practical introduction to working with data — cleaning it, understanding it,
-            and presenting it in a way that supports good decisions.
-        </p>
-        <ul class="cert-topics">
-            <li>Data collection &amp; cleaning</li>
-            <li>Basic statistics</li>
-            <li>Charts &amp; insights</li>
-        </ul>
-    </template>
-
-    <template id="cert-ai">
-        <h2 class="cert-title">AI Fundamentals</h2>
-        <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
-        <p class="cert-copy">
-            An overview of how intelligent systems learn, where machine learning fits, and
-            how to use AI responsibly.
-        </p>
-        <ul class="cert-topics">
-            <li>How AI systems learn</li>
-            <li>Machine learning basics</li>
-            <li>Responsible AI</li>
-        </ul>
-    </template>
-
-    <template id="cert-android">
-        <h2 class="cert-title">Android Fundamentals</h2>
-        <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
-        <p class="cert-copy">
-            An introduction to mobile development on Android — how apps are structured,
-            how screens are designed, and how users move through them.
-        </p>
-        <ul class="cert-topics">
-            <li>App structure &amp; layouts</li>
-            <li>Activities &amp; navigation</li>
-            <li>Building for mobile users</li>
-        </ul>
-    </template>
-
-    <dialog class="cert-dialog" id="cert-dialog" aria-label="Certificate details">
-        <button class="dialog-close" type="button" data-close aria-label="Close certificate details">
-            <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
-        </button>
-
-        <div class="cert-sheet">
-            <div class="cert-sheet-head">
-                <span class="cert-seal" aria-hidden="true">
-                    <svg class="icon"><use href="#i-seal"></use></svg>
-                </span>
-                <p>Certificate of Completion</p>
-            </div>
-
-            <div class="cert-sheet-body" data-cert-content></div>
-
-            <p class="cert-footnote">
-                Original certificate available on request through the
-                <a href="contact.html">contact page</a>.
-            </p>
-
-            <div class="cert-actions">
-                <a class="btn btn-primary" data-cert-pdf href="#" target="_blank" rel="noopener" hidden>
-                    Open certificate PDF
-                    <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
-                </a>
-                <button class="btn btn-outline" type="button" data-close>Close</button>
+    <!-- CSS-only certificate details, opened with :target -->
+    <div class="cert-modal" id="cert-programming" role="dialog" aria-modal="true" aria-labelledby="cert-programming-title">
+        <a class="cert-modal-backdrop" href="#certifications" aria-label="Close certificate details"></a>
+        <div class="cert-modal-panel">
+            <a class="cert-modal-close" href="#certifications" aria-label="Close certificate details">
+                <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+            </a>
+            <div class="cert-sheet">
+                <div class="cert-sheet-head">
+                    <span class="cert-seal" aria-hidden="true">
+                        <svg class="icon"><use href="#i-seal"></use></svg>
+                    </span>
+                    <p>Certificate of Completion</p>
+                </div>
+                <div class="cert-sheet-body">
+                    <h2 class="cert-title" id="cert-programming-title">Programming Fundamentals</h2>
+                    <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
+                    <p class="cert-copy">
+                        A foundational program covering how software is structured — from variables and
+                        control flow to functions and object-oriented thinking.
+                    </p>
+                    <ul class="cert-topics">
+                        <li>Variables &amp; control flow</li>
+                        <li>Functions &amp; problem solving</li>
+                        <li>Object-oriented basics</li>
+                    </ul>
+                </div>
+                <p class="cert-footnote">
+                    Original certificate available on request through the
+                    <a href="contact.html">contact page</a>.
+                </p>
+                <div class="cert-actions">
+                    <a class="btn btn-outline" href="#certifications">Close</a>
+                </div>
             </div>
         </div>
-    </dialog>
+    </div>
+
+    <div class="cert-modal" id="cert-data" role="dialog" aria-modal="true" aria-labelledby="cert-data-title">
+        <a class="cert-modal-backdrop" href="#certifications" aria-label="Close certificate details"></a>
+        <div class="cert-modal-panel">
+            <a class="cert-modal-close" href="#certifications" aria-label="Close certificate details">
+                <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+            </a>
+            <div class="cert-sheet">
+                <div class="cert-sheet-head">
+                    <span class="cert-seal" aria-hidden="true">
+                        <svg class="icon"><use href="#i-seal"></use></svg>
+                    </span>
+                    <p>Certificate of Completion</p>
+                </div>
+                <div class="cert-sheet-body">
+                    <h2 class="cert-title" id="cert-data-title">Data Analysis Fundamentals</h2>
+                    <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
+                    <p class="cert-copy">
+                        A practical introduction to working with data — cleaning it, understanding it,
+                        and presenting it in a way that supports good decisions.
+                    </p>
+                    <ul class="cert-topics">
+                        <li>Data collection &amp; cleaning</li>
+                        <li>Basic statistics</li>
+                        <li>Charts &amp; insights</li>
+                    </ul>
+                </div>
+                <p class="cert-footnote">
+                    Original certificate available on request through the
+                    <a href="contact.html">contact page</a>.
+                </p>
+                <div class="cert-actions">
+                    <a class="btn btn-outline" href="#certifications">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cert-modal" id="cert-ai" role="dialog" aria-modal="true" aria-labelledby="cert-ai-title">
+        <a class="cert-modal-backdrop" href="#certifications" aria-label="Close certificate details"></a>
+        <div class="cert-modal-panel">
+            <a class="cert-modal-close" href="#certifications" aria-label="Close certificate details">
+                <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+            </a>
+            <div class="cert-sheet">
+                <div class="cert-sheet-head">
+                    <span class="cert-seal" aria-hidden="true">
+                        <svg class="icon"><use href="#i-seal"></use></svg>
+                    </span>
+                    <p>Certificate of Completion</p>
+                </div>
+                <div class="cert-sheet-body">
+                    <h2 class="cert-title" id="cert-ai-title">AI Fundamentals</h2>
+                    <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
+                    <p class="cert-copy">
+                        An overview of how intelligent systems learn, where machine learning fits, and
+                        how to use AI responsibly.
+                    </p>
+                    <ul class="cert-topics">
+                        <li>How AI systems learn</li>
+                        <li>Machine learning basics</li>
+                        <li>Responsible AI</li>
+                    </ul>
+                </div>
+                <p class="cert-footnote">
+                    Original certificate available on request through the
+                    <a href="contact.html">contact page</a>.
+                </p>
+                <div class="cert-actions">
+                    <a class="btn btn-outline" href="#certifications">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cert-modal" id="cert-android" role="dialog" aria-modal="true" aria-labelledby="cert-android-title">
+        <a class="cert-modal-backdrop" href="#certifications" aria-label="Close certificate details"></a>
+        <div class="cert-modal-panel">
+            <a class="cert-modal-close" href="#certifications" aria-label="Close certificate details">
+                <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+            </a>
+            <div class="cert-sheet">
+                <div class="cert-sheet-head">
+                    <span class="cert-seal" aria-hidden="true">
+                        <svg class="icon"><use href="#i-seal"></use></svg>
+                    </span>
+                    <p>Certificate of Completion</p>
+                </div>
+                <div class="cert-sheet-body">
+                    <h2 class="cert-title" id="cert-android-title">Android Fundamentals</h2>
+                    <p class="cert-awarded">Awarded to <strong>Tilahun Berga</strong></p>
+                    <p class="cert-copy">
+                        An introduction to mobile development on Android — how apps are structured,
+                        how screens are designed, and how users move through them.
+                    </p>
+                    <ul class="cert-topics">
+                        <li>App structure &amp; layouts</li>
+                        <li>Activities &amp; navigation</li>
+                        <li>Building for mobile users</li>
+                    </ul>
+                </div>
+                <p class="cert-footnote">
+                    Original certificate available on request through the
+                    <a href="contact.html">contact page</a>.
+                </p>
+                <div class="cert-actions">
+                    <a class="btn btn-outline" href="#certifications">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
